@@ -1,0 +1,41 @@
+<h1>Fill it out kid</h1>
+
+<form action="<%= cats_url %>" method="Post">
+  <label for="name"> Name: <input type="string" id ="name" name="cat[name]"     value="<% @kitten.name %>">
+  </label>
+  </br>
+  
+  
+  <label for="sex"> Gender: <input type="radio" id = "sex" name="cat[sex]"      value="M">M
+    <input type="radio" id = "sex" name="cat[sex]" value="F" >F
+  </label>
+  </br>
+
+
+ 
+   
+  <label for="color"> Select Color of Coat: 
+    <select cats="colors"> 
+      <option value=""></option>
+      <option value="orange">Orange</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+      <option value="yellow">Yellow</option>
+    </select> 
+  </label>
+
+
+
+
+ 
+  </br>
+  <label for="birth_date"> Birthday: <input type="date" id = "birth_date" name="cat[birth_date]" value="<% @kitten.birth_date %>">
+  </label>
+  </br>
+  <label for="description"> Tell us about the Kitty: 
+    <textarea rows="2" cols="50">
+    </textarea>
+  </label>
+  
+
+</form>
